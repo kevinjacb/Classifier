@@ -6,6 +6,4 @@ The webapp.py has the flask web application
 
 The model.ipynb has the python notebook of the model
 
-The images zip has the data used for traning
-
 Please try again if web application show Error Occured!
