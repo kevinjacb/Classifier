@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0%;
+                padding: 0%;
+                background-color: rgb(238, 208, 208);
+            }
+            .heading{
+                background-color:cyan;
+                padding-top: 1rem;
+                width: 100vw;
+                height: 20vh;
+                font-size: 4rem;
+                font-family:'Courier New', Courier, monospace;
+                font-weight: bold;
+                text-align: center;
+            }
+            .submit{
+                background-color:rgb(51, 202, 51);
+                border: none;
+                color: white;
+                font-size: 20px;
+                padding: 5px 10px;
+                text-align: center;
+            }
+            .submit:hover{
+                background-color:slateblue;
+            }
+            .chakka{
+                color:black;
+            }
+            .chakka:hover{
+                color:rgb(51, 202, 51);
+            }
+            .manga{
+                color:black;
+            }
+            .manga:hover{
+                color:rgb(186, 211, 45);
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div class="heading"> 
+            <span class="chakka">Chakka</span> 
+            <span class="manga">Manga</span> 
+            <span>Classifier</span>
+        </div>
+        <br>
+        <div style="margin: 1rem; text-align: center;">
+            
+        </div>
+        <br>
+        <div style="margin: 1rem; text-align: center;">
+            <form action = "http://localhost:5000/uploader" method = "POST" 
+            enctype = "multipart/form-data">
+            <input type = "file" name = "file" style="text-align: center;font-size: 10px;"/>
+            <input type = "submit" class="submit"/>
+         </form>
+        </div>
+    </body>
+</html>
